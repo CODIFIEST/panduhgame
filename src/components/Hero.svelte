@@ -26,7 +26,7 @@
      <img 
         class = "wallet-image"
         alt = "phantom wallet"
-        src = './assets/phantom-icon-purple.png'
+        src = 'src/assets/phantom-icon-purple.png'
         on:click={
             async ()=>{
                 await connectPhantom();
