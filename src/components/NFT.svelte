@@ -29,7 +29,7 @@
             console.log('NFT.svelte playerImage')
             console.log($playerImage)
          
-            document.getElementById('game-container').innerHTML = `<img src='${nft.imageURL}'>`;
+            // document.getElementById('game-container').innerHTML = `<img src='${nft.imageURL}'>`;
           
         }}
         on:keypress={ () => {
