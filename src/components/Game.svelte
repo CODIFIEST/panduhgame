@@ -42,10 +42,10 @@
 
     function preload() {
         // console.log(`preload `+ {playerImage})
-        this.load.image("sky", "./assets/sky.png");
-        this.load.image("ground", "./assets/platform.png");
-        this.load.image("star", "./assets/star.png");
-        this.load.image("bomb", "./assets/bomb.png");
+        this.load.image("sky", "./sky.png");
+        this.load.image("ground", "./platform.png");
+        this.load.image("star", "./star.png");
+        this.load.image("bomb", "./bomb.png");
         this.load.spritesheet("dude", imgURL, {
             frameWidth: 280,
             frameHeight: 366,
