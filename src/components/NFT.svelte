@@ -1,5 +1,6 @@
 <script lang="ts">
     import type { NFT } from "../domain/nft";
+    import player1 from "../stores/player1";
     import { playerImage } from "../stores/playerImage";
     import transformURLs from "../utils/transformURLs";
     import truncateString from "../utils/truncateString";
@@ -25,10 +26,11 @@
         alt={nft.title} 
         on:click={ ()=>{
             playerImage.set(nft.imageURL)
+            player1.set(nft)
             // console.log(playerImage)
             console.log('NFT.svelte playerImage')
             console.log($playerImage)
-         
+            console.log($player1)
             // document.getElementById('game-container').innerHTML = `<img src='${nft.imageURL}'>`;
           
         }}

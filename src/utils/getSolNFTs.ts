@@ -45,6 +45,8 @@ async function getSolNFTs(address: string): Promise<NFT[]> {
                 title: nft.name,
                 description: nft.description,
                 imageURL: nft.imageUrl,
+                collecctionAddress:nft.collecctionAddress,
+                tokenAddress: nft.tokenAddress,
                 nftType: NFTType.Solana
             }
             domainNFTs.push(eachNFT)

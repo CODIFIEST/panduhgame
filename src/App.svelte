@@ -6,20 +6,29 @@
   // import Navbar from "./components/Navbar.svelte";
   import { account } from "./stores/account";
     import { playerImage } from './stores/playerImage';
+    import Resizer from './components/Resizer.svelte';
 
 </script>
-
 <!-- <Navbar/> -->
 {#if $account && !$playerImage}
 <!-- {console.log("front page ", $account)} -->
 <DisplayNfTs />
 {:else if $playerImage}
+<div id="bg-image">
+  <!-- <Resizer /> -->
 <Game/>
+</div>
+
 {:else}
 <Hero />
 {/if}
-
 <style>
+#bg-image {
+  background-image: url({$playerImage});
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+   
   /* .logo {
     height: 6em;
     padding: 1.5em;
